@@ -26,21 +26,37 @@
 
         h2{text-decoration: underline;}
 
-       
+        div{color: purple;}
+
+        video{height: 500px;
+        width: 500px;}
+            /*chequear despues como se hace para reducir el espacio vacio alrededor de la imagen ocupado por el player*/
+
+        input{display: block;}
+            
+        #box{display: inline-block;}
+
+        textarea{display: block;}
+
+        select{display: block;}
 
     </style>
 </head>
 <body>
     <h1>Noelia Jacobo</h1>
+    <audio src="thebeatles.mp3" autoplay></audio> 
+    <video src="beatlesvideo.mp4" poster="beatles.jpg" controls></video>
+    <br>
     <img src="fotocv.jpeg" alt="foto con mascota">
-    <p>Paddington, NSW
-        <br> Noe.jacobo@gmail.com
-        <br> 0484720182
-        <br> Argentinian citizen
-
-    </p>
+    <div><p>Paddington, NSW    </p>
+    <br> 
+    <p> Noe.jacobo@gmail.com    </p>
+    <br>
+    <p> 0484720182    </p>
+    <br>
+    <p> Argentinian citizen    </p></div>
     <hr>
-
+        
     <h2>Introduction</h2>
     <p>I am an Argentinian communication professional looking for a challenging and rewarding opportunity. My experience
         back home includes different positions in the corporative world, and in advertising. I am currently looking for
@@ -52,7 +68,7 @@
     <h3>Bachelor in Communicational Science
         <br> Finished in 2016
     </h3>
-    <p>University of Buenos Aires, Argentina.</p>
+    <a href="https://www.uba.ar" target="_blank">University of Buenos Aires, Argentina.</a>
 
     <h2>Experience</h2>
     <h3>Queen Street Deli in Woollahra</h3>
@@ -92,6 +108,35 @@
     <h2>Languages</h2>
     <p>Proficient English (First Certificate Examination graded A – IELST graded 7.5)</p>
     <p>Native Spanish</p>
+
+<form action="enviar.php" method="POST"></form>
+<label for="name">Nombre:</label>
+<input type="text" name="name">
+
+<label for="surname">Apellido:</label>
+<input type="text" name="surname" placeholder="Apellido">
+
+<label for="company">Compañia:</label>
+<input type="text" name="company">
+
+<label for="area">Area de interes:</label>
+<br>
+<input type="checkbox" name="area" id="box">Comunicaciones
+<input type="checkbox" name="area" id="box">IT
+<input type="checkbox" name="area" id="box">Ventas y atencion al cliente
+<br>
+<label for="propuesta">Propuesta laboral:</label>
+<input type="file" placeholder="Adjunte su propuesta aqui" name="propuesta">
+<label for="comentarios">Comentarios:</label>
+<textarea placeholder="Comentarios adicionales"></textarea>
+
+<label for="pais">Pais:</label>
+<select name="pais" id="">
+<option value="arg">Argentina</option>
+<option value="aus">Australia</option>
+<option value="otros">Otros</option></select>
+
+<input type="submit" name="enviar" value="Enviar">
 
 </body>
 </html>
