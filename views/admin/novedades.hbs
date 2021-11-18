@@ -1,0 +1,68 @@
+<h3>Hola {{usuario}}
+
+</h3>
+
+<a href="/admin/login/logout">
+<button type="button" class="btn btn-dark">Cerrar sesion</button>
+</a>
+
+<div class="row">
+    <div class="col-5">
+        <h3>Listado de Novedades</h3>
+    </div>
+
+    <div class="col-2">
+       <form class="navbar-search pull-left" method="get" action="/admin/novedades">
+  <input type="text" class="search-query" placeholder="Search">
+</form>
+    </div>
+
+    <div class="col-2 text-right">
+        <a href="/admin/novedades/agregar" class="btn btn-success">
+        <i class="fas fa-trash-alt"></i>
+
+
+
+        Nuevo</a>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col" class="text-center">Acciones</th>
+
+
+                </tr>
+
+            </thead>
+        <tbody>
+            {{#each novedades}}
+            <tr>
+                <th scope="row">{{id}}</th>
+                <td>{{titulo}}</td>
+                <td>{{{imagen}}}</td>
+                <td class="text-right">
+                    <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary">
+                    <i class="far fa-edit"></i>
+                    <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary">
+                    <i class="fas fa-trash-alt"></i>
+
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+        </table>
+
+    </div>
+
+
+</div>
+
