@@ -1,37 +1,31 @@
-   <!--Hero-->
+<!--Hero-->
 
-    <div class="hero">
-        <h1>Wine Club</h1>
+<div class="hero">
+</div>
+</div>
+</div>
 
-    </div>
-    </div>
-    </div>
+<!--Navegador-->
 
-    <!--Navegador-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Wine Club</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" data scroll href="#">Home</a>
-                    <a class="nav-link" data scroll href="#somos">Quienes somos</a>
-                    <a class="nav-link" data scroll href="#novedades">Novedades</a>
-                    <a class="nav-link" data scroll href="#prod">Nuestros productos y servicios</a>
-                    <a class="nav-link" data scroll href="#contacto">Contacto</a>
-                    <a class="nav-link" href="#preguntas">Preguntas frecuentes</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" data scroll href="#">Home</a>
+                <a class="nav-link" data scroll href="#somos">Quienes somos</a>
+                <a class="nav-link" data scroll href="#novedades">Noticias</a>
+                <a class="nav-link" data scroll href="#prod">Nuestros productos y servicios</a>
+                <a class="nav-link" data scroll href="#contacto">Contacto</a>
+                <a class="nav-link" href="#preguntas">Preguntas frecuentes</a>
 
-                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-    <!--Galeria de imagenes-->
+<!--Galeria de imagenes
 
     <div class="gallery-wrapper">
         <div class="gallery-scroll">
@@ -54,204 +48,225 @@
             </div>
         </div>
     </div>
+-->
+
+<!--Comienzo de quienes somos-->
+<div class="row py-3 container-fluid">
+
+    <div id="somos" class="col-8">
+        <h2>Quienes somos</h2><br><br>
+        <p>Wines Club surgió en una noche de noche de vinos con amigos… tan simple como eso, preguntándonos de donde
+            serían cada uno de los vinos que estábamos probando, intentando descifrar cuales eran los distintos sabores
+            perceptibles en ellos y con que delicias acompañarlos. </p>
+        <br>
+
+        <p>Así fue como apareció la inquietud por investigar y aprender más de este maravilloso mundo. Ahora nos
+            gustaría ayudar a otros a mejorar su experiencia del vino y poder disfrutar como un gran conocedor, sin
+            invertir ni tiempo ni dedicación para ello. </p>
+        <br>
+
+        <p>De acuerdo con las necesidades y deseos de nuestros clientes, ofrecemos distintos tipos de experiencias con
+            distintos niveles de información, para satisfacer tanto al que desea una experiencia más desestructurada
+            como al que prefiere una más rica. Ofrecemos paquetes de degustación de vinos, dentro de los cuales se
+            pueden seleccionar: solo tintos, blancos, rosados o espumantes, o mix. </p>
+        <br>
+
+        <p>A este paquete de base se le pueden agregar: notas informativas sobre cada uno de los vinos para compartir
+            mientras se disfruta, maridaje con comidas tanto dulces como saladas para elogiar las distintas notas de
+            sabores, entre otras opciones para acompañar la experiencia como juegos de mesa y cigarros.</p>
 
 
-    <!--Comienzo de quienes somos-->
-        <div id="somos" class="row py-3">
-            <h2>Quienes somos</h1>
-                <p>Wines Club surgio en una noche de vinos con amigos, tal simple como eso, preguntandonos de donde
-                    seria
-                    cada uno de los vinos que estabamos probando, intentando descifrar cuales eran los distintos sabores
-                    perceptibles en ellos y con que manjares acompañarlos.</p>
-                <p>Asi fue que aparecio la inquietud por investigar y aprender mas de este maravilloso mundo. Ahora nos
-                    gustaria ayudar a otros a ampliar su experiencia del vino y poder disfrutar como un gran conocedor,
-                    sin
-                    invertr tanto tiempo en planificacion.</p>
-                <p>De acuerdo a las necesidades y deseos de nuestros clientes, ofrecemos distintos tipos de experiencias
-                    con
-                    distintos niveles de dedicacion y planificacion, para satisfacer tanto al que desea una experiencia
-                    mas
-                    desestructurada como al que desea una experiencia mas rica. Ofrecemos paquetes de degustacion de
-                    vinos,
-                    dentro de los cuales se pueden seleccionar: solo tintos, solo blancos o mix.</p>
-                <p>A este paquete de base se le pueden agregar: notas informativas sobre cada uno de los vinos para
-                    compartir mientras se disfruta, maridaje con comidas tanto dulces como saladas para elogiar las
-                    distintas notas de sabores, entre otras opciones para acompañar la experiencia como juegos de mesa y
-                    cigarros.</p>
 
+    </div>
 
-        </div>
-    <!--Cierre de quienes somos-->
+    <div class="col-3">
+        <img src="images/brindis.jpg" alt="Personas brindando" id="imagenbrindis">
 
-    <!--Seccion Novedades-->
-    <h2>Novedades</h2>
+        <a href='https://www.freepik.es/vectores/fondo'>Vector de Fondo creado por freepik - www.freepik.es</a>
+    </div>
+
+</div>
+<!--Cierre de quienes somos-->
+
+<!--Seccion Novedades-->
+<div class="row" id="novedades">
+
+    <h2>Noticias</h2>
     {{#each novedades}}
-    <div class="row" id="filade3">
-                <div id="novedades" class="col-md-4 offset-md-2 py-2">
-                      <ul>
-                    <li>
-                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
-                            <img src="{{imagen}}" width="70" alt="{{titulo}}">{{titulo}}
-                        </a>
+    <div class="col-md-4 py-2">
 
-                    </li>
+        <ul>
+            <li>
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
+                    <img src="{{imagen}}" alt="{{titulo}}">{{titulo}}
+                </a>
 
-                    </ul>
-                </div>
+            </li>
+
+        </ul>
+    </div>
+
     {{/each}}
     <!--Fin de Seccion Novedades-->
 
     <!--Modal-->
     {{#each novedades}}
-  <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">{{titulo}}</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h5>{{subtitulo}}</h5>
-        <img src="{{imagen}}" alt="{{titulo}}" width="160" height="200">
-        <p>{{cuerpo}}</p>
-      </div>
-    </div>
-  </div>
-</div>
-{{/each}}
-
-    <!--Columna para imagen-->
-
-        <div id="imagenrelleno" class="col-md-3 py-1">
-            <img src="images/exp3.jpg" alt="vino en mesa" id="imagenrelleno">
-        </div>
-    <!--Fin de columna para imagen-->
-
-
-    <!--Columna para reviews-->
-
-    <div id="reviews" class="col-md-3 offset-md-1 py-1">
-
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+    <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">{{titulo}}</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <h4>"La mejor y mas completa experiencia en muchos años de degustaciones"</h4>
-                        <br>
-                        <p>Pablo Arellano</p>
-                        <br>
-                        <p>Buenos Aires, Argentina</p>
-                    </div>
-                    <div class="carousel-item">
-                        <h5>"Los chicos son los mejores, super dispuestos a modificar el producto para las necesidades y
-                            gustos de cada uno, excelente servicio"</h5>
-                        <br>
-                        <p>Marita Santilli</p>
-                        <br>
-                        <p>Rosario, Argentina</p>
-                    </div>
-                    <div class="carousel-item">
-                        <h5>"Los mejores vinos y los acompañamientos mas deliciosos!! Los voy a convocar a cada reunion
-                            que haga de ahora en mas. Super recomendable!!"</h5>
-                        <br>
-                        <p>Antonio Carbajal</p>
-                        <br>
-                        <p>Bariloche, Argentina</p>
-                    </div>
+                <div class="modal-body">
+                    <h5>{{subtitulo}}</h5>
+                    <img src="{{imagen}}" alt="{{titulo}}" height="200" style="margin-left:15%;margin-bottom:20px;">
+                    <p>{{cuerpo}}</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
-
         </div>
-
-    <!--Nuestros productos-->
-    <div id="prod">
-        <h2>Nuestros productos y servicios</h2>
-
-        <div class="clearfix">
-            <img src="images/exp2.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Vino en mesa"
-                style="height: 350px; width: 350px;">
+    </div>
+    {{/each}}
 
 
-            <p>
-                Wine Club ofrece diferentes servicios que van desde el envio de un surtido de botellas de distintos
-                destinos y varietales hasta opciones mas personalizadas. Para el armado del mix, se puede optar por:
-                combinacion de solo tintos, solo
-                blancos, solo rose, solo espumantes o un combo de todos los anteriores.
-            </p>
+</div>
 
-            <p>
-                Sobre este servicio se pueden agregar otros adicionales como: acompañamiento de comidas especialmente
-                diseñadas para el maridaje con los vinos enviados; decoracion para armar una mesa refinada sobre la cual
-                desplegar las bebidas y/o comidas; inclusion de juegso de mesa para entretener mientras se disfruta;
-                tarjetas informativas para cada vino explicando su origen, notas de sabores, etc.
-            </p>
+<div class="row" id="filareviews">
 
-            <p>
-                A continuacion se encuentra nuestra carta de vinos. Elegi que opcion de servicio te interesa y
-                contactanos para comenzar a planear tu entrada en la maravillosa experiencia que solo Wine Club puede
-                darte.
-            </p>
+    <div class="col-4 offset-1">
+        <img src="images/tintoypicada.jpg" alt="vino tinto y picada en casa" id="imagereviews">
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident temporibus dolores veniam quae
-                aspernatur
-                excepturi natus animi iure necessitatibus deserunt reiciendis iste impedit veritatis laboriosam
-                doloribus,
-                quam laborum quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, facilis illum
-                ipsam,
-                incidunt aut corporis tempore sequi maiores magni quos aperiam cupiditate optio reprehenderit atque
-                maxime
-                dolorem laborum! Inventore, modi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-                voluptate officia esse nobis repellendus facere amet ad earum explicabo laboriosam magni, ipsam non
-                assumenda, dolores vitae saepe, quae molestiae iure!</p>
+    </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eaque in aspernatur dolorem iste
-                repellendus
-                alias accusantium excepturi sint beatae at magnam quidem blanditiis quia fugit, incidunt expedita
-                delectus
-                itaque.</p>
+    <div id="reviews" class="col-md-4 offset-md-1 py-1">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h4>"La mejor y más completa experiencia en muchos años de degustaciones"</h4>
+                    <br>
+                    <p>Pablo Arellano</p>
+                    <br>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+                <div class="carousel-item">
+                    <h5>"Los chicos son los mejores, super dispuestos a modificar el producto para las necesidades y
+                        gustos de cada uno, excelente servicio"</h5>
+                    <br>
+                    <p>Marita Santilli</p>
+                    <br>
+                    <p>Rosario, Argentina</p>
+                </div>
+                <div class="carousel-item">
+                    <h5>"Los mejores vinos y los acompañamientos más deliciosos!! Los voy a convocar a cada reunión
+                        que haga de ahora en más. Super recomendable!!"</h5>
+                    <br>
+                    <p>Antonio Carbajal</p>
+                    <br>
+                    <p>Bariloche, Argentina</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+    </div>
+</div>
+<!--Nuestros productos-->
+<div id="prod">
+    <h2>Nuestros productos y servicios</h2>
 
-        <h3>Vinos tintos</h3>
+    <div class="clearfix">
+        <img src="images/tintoyqueso2.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="Vino en mesa"
+            style="height: 250px; width: 325px;">
 
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                        aria-controls="panelsStayOpen-collapseOne">
-                        Cabernet Sauvignon
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body">
 
-                        La cabernet sauvignon es una de las uvas tintas más conocidas del mundo. Crece en casi todas las
-                        grandes zonas vitícolas, en un diverso espectro de climas, desde el valle del Okanagan (Canadá)
-                        al
-                        valle de la Becá (Líbano). La cabernet sauvignon se hizo famosa por su presencia en el vino de
-                        Burdeos, donde es mezclada a menudo con la merlot y con la cabernet franc.
+        <p>
+            Wine Club ofrece diferentes servicios que van desde el envío de un surtido de botellas de distintos
+            orígenes y varietales hasta opciones más personalizadas. Para el armado del mix, se puede optar por:
+            combinación de sólo tintos, sólo
+            blancos, sólo rosados, sólo espumantes o un combo de todos los anteriores.
+        </p>
 
-                        <br><br>
+        <p>
+            Sobre este servicio se pueden agregar otros adicionales como: acompañamiento de comidas especialmente
+            diseñadas para el maridaje con los vinos enviados; decoración para armar una mesa refinada sobre la cual
+            desplegar las bebidas y/o comidas; inclusión de juegos de mesa para entretener mientras se disfruta;
+            tarjetas informativas para cada vino explicando su origen, notas de sabores, etc.
+        </p>
 
+        <p> Con respecto a las comidas, confeccionamos cada menú individualmente, de acuerdo con las necesidades y
+            gustos de nuestros clientes. En general, la mayoría de nuestros clientes optan por tablas de quesos por la
+            facilidad a la hora de servir y compartir, y el maravilloso matrimonio que hacen con los vinos en general.
+            Pero también contamos con opciones libres de gluten, veganas, bajas en calorías. En fin, contanos que
+            necesitas y te diseñamos un menú a tu medida. </p>
+
+
+        <p> Para las decoraciones, tenemos un set fijo que ofrecemos, que incluye manteles e individuales en colores
+            crema y beige para asegurar versatilidad, con un look rustico chic. Y nuestra selección de juegos de mesa
+            por ahora incluye: Pictionary, Twister, Monopoly o Erudito. </p>
+
+
+        <p>
+            A continuación, te contamos que tipos de vinos incluye nuestra carta, para que encuentres tus preferidos.
+            Elegí que opción de servicio te interesa y
+            contactanos para comenzar a planear tu entrada en la maravillosa experiencia que sólo Wine Club puede
+            darte.
+        </p>
+
+    </div>
+
+    <h3>Vinos tintos</h3>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Cabernet Sauvignon
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <p>
+                        La uva Cabernet Sauvignon es la más difundida y reconocida a nivel mundial. Un factor que
+                        contribuye
+                        a esto es su adaptabilidad a distintas zonas y tipos de tierra. Su origen sin embargo, como en
+                        la
+                        mayoría de los casos, es francés.</p>
+                    <p>
+                        El vino Cabernet Sauvignon puede encontrarse en la variedad de vinos jóvenes y de crianza
+                        envejecido
+                        en barrica de roble francés como americano, ofreciendo un sabor único tostado de barrica que
+                        aporta
+                        al vino sabores y aromas más delicados. Los aromas que este vino nos presta son florales con
+                        toques
+                        de violetas, frutales con destellos de arándanos, casis, frambuesas y moras; y vegetales
+                        ofreciendo
+                        un exquisito aroma de pimiento verde y café sin tostar. Cuando se conserva en barrica de roble,
+                        el
+                        Cabernet Sauvignon de Crianza ofrece aroma a humo, cedro, incienso, regaliz y perfume de fruta.
+                    </p>
+
+                    <br><br>
+                    <!--
                         <div class="container-fluid row justify-content-evenly">
                             <div class="card col-md-4">
                                 <img src="images/chile_cabernet.jpg" class="card-img-top" alt="Cabernet Chileno">
@@ -273,168 +288,460 @@
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseTwo">
-                        Pinot Noir
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body">
-                        La pinot noir es una variedad de uva de vino (Vitis vinifera). El nombre puede hacer referencia
-                        también a los vinos realizados sobre todo a partir de esta uva. El nombre deriva de las palabras
-                        francesas pine (piña) y noir (negra). El término pine se debe a que esta variedad tienen unos
-                        racimos apretados y cónicos, con forma de piña.1​
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseThree">
-                        Merlot
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body">
-                        El vino merlot se caracteriza por su finura y suavidad, sin dejar de ser aromático y carnoso. Es
-                        de
-                        color rubí muy intenso, de graduación mediana y envejece rápidamente sin perder calidad.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                        aria-controls="panelsStayOpen-collapseFour">
-                        Shiraz
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                    aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body">
-                        La syrah, también conocida como shiraz, es una uva tinta que se cultiva en todo el mundo y se
-                        usa
-                        sobre todo para producir vino tinto. Un análisis de ADN de 1999 descubrió que la syrah era
-                        descendiente de dos uvas oscuras del sureste de Francia, la dureza y la mondeuse blanche.1
-                    </div>
+                        </div>-->
                 </div>
             </div>
         </div>
-   
-
-    <h3>Vinos blancos</h3>
-
-     </div>
-
-    <!--Final de productos-->
-
-    <!--Contactanos-->
-    <div id="contacto">
-        <h2>Contactanos</h2>
-        <div class="container-fluid">
-            <div class="row justify-content-evenly">
-                <div class="col-5 py-3">
-                    <h3>Nuestra ubicacion</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.2709301526456!2d151.2184580153594!3d-33.88267558065239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae1078707921%3A0xd4979d8485b42f7!2sVictoria%20Barracks%2C%208%20Oxford%20St%2C%20Paddington%20NSW%202021!5e0!3m2!1ses-419!2sau!4v1631007416525!5m2!1ses-419!2sau"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-
-                <div class="col-5 py-3">
-                    <h3>Form de contacto</h3>
-
-                    <form action="/" method="post">
-                        <div class="row mb-3">
-                            <label for="inputnombre" class="col-sm-2 col-form-label">Nombre</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputnombre" name="nombre">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputemail" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="inputemail" name="email">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <label for="inputtel" class="col-sm-2 col-form-label">Telefono</label>
-                            <div class="col-sm-10">
-                                <input type="tel" class="form-control" id="inputtel" name="tel">
-                            </div>
-                        </div>
-                        <fieldset class="row mb-3">
-                            <label for="inputprod" class="col-sm-2 col-form-label">Productos de interes</label>
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="varietales separados"
-                                        value="varietal" checked>
-                                    <label class="form-check-label" for="gridRadios1">
-                                        Varietales por separado
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="mix de vinos"
-                                        value="mix de vinos">
-                                    <label class="form-check-label" for="gridRadios2">
-                                        Mix de vinos
-                                    </label>
-                                </div>
-
-
-                            </div>
-                        </fieldset>
-
-                        <div class="row mb-3">
-                            <label for="inputcomment" class="col-sm-2 col-form-label">Comentarios</label>
-                            <div class="col-sm-4">
-                                <textarea name="comment" id="commentarea" cols="42" rows="10" name="comment"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Pinot Noir
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
                     <p>
-          {{message}}
+                        El Pinot Noir es una uva autóctona de Borgoña, España.
+                        Son vinos de mediana intensidad y concentración tánica, de color rubí con reflejos violeta, que
+                        evolucionan cuando envejece a reflejos anaranjados y ocres. Aporta tonos aromáticos a cereza,
+                        frambuesa, grosella, guinda, violeta, coco y pasto recién cortado. Tiene un perfil delicado y
+                        elegante en boca, con un sabor a frutillas, arándanos, violetas, canela, rosas y anís. La
+                        crianza en roble le aporta expresiones de vainilla, tabaco y cuero.
+                        Es muy resistente al frío y es una de las uvas involucradas en la fabricación del champagne.</p>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    Merlot
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                    <p>
+                        La uva Merlot es una uva originaria de Burdeos, Francia. Es la segunda variedad más empleada del
+                        mundo, luego del Cabernet Sauvignon. Se caracteriza por su finura y suavidad, sin dejar de ser
+                        aromático y carnoso. Es de color rubí muy intenso, de graduación mediana y envejece rápidamente
+                        sin perder calidad.
+                        Las notas aromáticas más importantes son frambuesa, ciruela, cereza, chocolate y cedro. </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    Shiraz
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                    <p>
+                        La uva Syrah ha cobrado mucha notoriedad gracias a su facilidad de cultivo y su resistencia a
+                        enfermedades, además de que su maduración es precoz. Se adapta muy bien a zonas templadas a
+                        calidas
+                        y secas. Tiene taninos muy suaves y aporta una acidez muy fácilmente reconocible. Las
+                        principales
+                        notas aromáticas mas características son fruta negra madura, grosella, violetas, moras
+                        silvestres,
+                        frambuesa, pimiento, canela o clavo.</p>
+                    <p>
+                        Los vinos de este tipo de uva envejecidos en barrica de roble americano y francés no toman mucho
+                        aroma a madera pero si bien es cierto que el cuero, ahumado y notas ligeras de vainilla se unen
+                        en
+                        cada botella de vino Syrah Crianza.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h3>Vinos blancos
+    </h3>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample2">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne2">
+                <button class="accordion-button collapsed 2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne2">
+                    Chardonnay
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne2">
+                <div class="accordion-body">
+                    <p>La uva Chardonnay es originaria de Borgoña aunque ahora su cultivo está extendido a nivel
+                        mundial; potente, afrutada y de buena acidez, lo que la hace perfecta para la elaboración de
+                        champagne. Tiene un color pálido y amarillento con tonalidades verdes.</p>
+                    <p>
+                        Las notas aromáticas típicas de esta cepa son pepino, apio, miel, mango, durazno, piña, avellana
+                        y tabaco. Se puede añejar en roble, donde toma mucho aroma y bastante cuerpo.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo2">
+                <button class="accordion-button collapsed 2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo2" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo2">
+                    Pinot Blanc
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo2" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo2">
+                <div class="accordion-body">
+                    <p>
+                        La uva Pinot Blanc es característica del norte de Europa. Es una mutación natural del Pinot
+                        Noir. A la vista es un vino nítido y brillante, de color pálido con reflejos verdes que también
+                        se usa para la elaboración de champagne. Sus notas aromáticas principales son manzana y pizcas
+                        florales. Aporta un sabor de mediana acidez, resultando muy amigable y delicado para paladares
+                        mas sutiles.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree2">
+                <button class="accordion-button collapsed 2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree2" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree2">
+                    Sauvignon Blanc
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree2" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree2">
+                <div class="accordion-body">
+                    <p>
+                        La uva sauvignon blanc da vinos muy nerviosos y aromáticos, de alcohol medio y acidez elevada.
+                        Consumidos jóvenes, los vinos son frescos, secos y muy aromáticos, a fruta poco madura y matices
+                        herbáceos. Pueden envejecerse en barricas de roble, siendo vinos mas complejos con aromas
+                        calizos, pedregosos y a humo.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour2">
+                <button class="accordion-button collapsed 2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour2" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour2">
+                    Moscatel
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour2" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingFour2">
+                <div class="accordion-body">
+                    <p>
+                        La uva Moscatel produce un vino dulce con sabor afrutado con cierto grado de acidez y baja
+                        graduación alcohólica. En boca tiene diversos sabores entre los que destacan damasco, mandarina,
+                        limón, naranja y durazno. Los aromas más evidentes son el caramelo, rosas, jazmín y vainilla.
+                        No hay indicios claros de su origen, pero si hay evidencia de su existencia en
+                        Italia durante la
+                        Edad Media.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Vinos rosados</h3>
+    <p>
+        Se elaboran con uvas tintas, pero de manera exactamente igual a un blanco. Después de prensar, a las pocas horas
+        se hace un sangrado. Se obtiene un color más claro por el poco contacto que tiene con las lías y con toda la
+        materia sólida. </p>
+
+    <p>
+
+        De este modo, los vinos rosados extraen su color de la misma manera que lo hace un vino tinto. El mosto entra en
+        contacto con los hollejos de la uva tinta durante la fermentación. No obstante, la diferencia entre ambos tipos
+        de vinificación es que el contacto es más corto en el vino rosado. </p>
+
+    <p>
+
+        El color de un vino rosado vendrá determinado por el tiempo que esté en contacto el mosto, casi incoloro, con
+        las pieles de la uva durante el tiempo de maceración. De este modo, cuanto más tiempo esté la piel de la uva en
+        contacto con el vino, más oscuro será el color de un vino rosado. </p>
+    <p>
+        Las variedades más comunes para elaborar vino rosado son la Syrah, Cariñena, Tempranillo, Pinot Noir, Cabernet
+        Sauvignon, Merlot o Cinsault.
+    </p>
+
+    <h3>Vinos espumantes
+    </h3>
+
+    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample3">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne3">
+                <button class="accordion-button collapsed 3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne3" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne3">
+                    Champagne
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne3" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingOne3">
+                <div class="accordion-body">
+                    <p>
+                        Se denominan Champagne aquellos vinos espumosos producidos exclusivamente de uvas cultivadas,
+                        vendimiadas y elaboradas como vino en la región de Champagne, zona delimitada de Francia. Es la
+                        única región del mundo donde se produce exclusivamente este vino espumoso. Se elabora con
+                        Chardonnay, Pinot Noir y Pinot Meunier.
+                    </p>
+                    <p>
+                        Las variedades de uva y sus condiciones, determinan la acidez, cuerpo medio y la poca graduación
+                        de los Champanes. En sus largos periodos de envejecimiento, evolucionan a sabores tostados, que
+                        combinados junto a sus notas frutales de manzana y limón, desarrollan una cierta complejidad,
+                        reforzada por una duradera crianza del vino en botella.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo3">
+                <button class="accordion-button collapsed 3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo3" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo3">
+                    Prosecco
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo3" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo3">
+                <div class="accordion-body">
+                    <p>
+                        El Prosecco es un vino espumoso deliciosamente balanceado, de color amarillo brillante, con
+                        persistentes y finas burbujas, sus aromas frutales con notas cítricas lo hacen muy refrescante
+                        al paladar.</p>
+
+                    <p>
+                        El Prosecco se elabora en 3 tipos: Brut, Dry, y Extra Dry. Comparado con otros vinos espumosos,
+                        como el Champagne o el Cava, su graduación alcohólica es baja, entre 11% y 12% vol.</p>
+
+                    <p>El Prosecco es elaborado por el método Charmat, que es en el que la segunda fermentación se
+                        lleva a cabo en grandes tanques de acero inoxidable que están presurizados. Este proceso además
+                        de permitir que el vino mantenga el sabor propio de esta variedad de uva, es más económico que
+                        el método tradicional o Champenoise lo que permite un mayor volumen de producción a menor costo.
+                    </p>
+                    <p>El Prosecco está protegido con la Denominación de Origen Controlada por lo cual solamente pueden
+                        utilizar esta marca los productores de las regiones de Conegliano y de Valdobbiadene,
+                        garantizando así la permanencia de sus características.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree3">
+                <button class="accordion-button collapsed 3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree3" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree3">
+                    Cava
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree3" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree3">
+                <div class="accordion-body">
+                    <p>
+                        El cava es un vino gastronómico y versátil. Los diferentes tipos de cava españoles presentan
+                        características muy dispares, pudiendo ser secos, ligeros, potentes, ácidos, dulces, frescos,
+                        afrutados, rosados, blancos... Son consumidos como aperitivo, postre, o como acompañamiento de
+                        comidas y cenas. </p>
+
+                    <p>
+                        Los diversos tipos de cava son elaborados por el conocido como método tradicional, consistente
+                        en que tanto su segunda fermentación como su crianza se producen en la misma botella,
+                        adquiriendo de esta manera sus burbujas de una forma natural. </p>
+
+                    <p>
+                        Las uvas blancas autorizadas para la elaboración del cava son la Chardonnay, Malvasía, Macabeo,
+                        Parellada y Xarel·lo. Son tipos de uvas autóctonas de Cataluña desde hace siglos, excepto la
+                        Chardonnay, que es de reciente introducción. </p>
+
+                    <p>
+                        La aparición de cavas fuera de la región de Cataluña ha favorecido la introducción o el regreso
+                        de algunas variedades de uva que se encontraban desparecidas en la práctica, como es el caso de
+                        la uva Monastrell. Otras uvas tintas que están autorizadas para la elaboración de cava son la
+                        Garnacha tinta, la Trepat y la Pinot noir.
+
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="row container-fluid" id="preguntas">
-            <h2>Preguntas frecuentes</h2>
-            <h4>Puedo pedir siendo menor de edad?</h4>
-            <p>No, la venta de alcohol a menores esta terminantemente prohibida, y se pide en cualquier compra que lo
-                incluye, comprobante de identidad para corroborar la edad del titular del pedido.</p>
+    </div>
 
-            <h4>Hay pedido minimo?</h4>
-            <p>No tenemos establecido un pedido minimo pero para poder acceder al envio sin costo y beneficios como
-                muestras, y accesorios de cortesia, es necesario superar los 500 ARS.</p>
+    <h3>Servicios adicionales</h3>
 
-            <h4>Que clase de productos puedo combinar?</h4>
-            <p>Nuestra gama de productos incluye: vinos, elementos para servicio (copas, decantadores, tapones, etc.),
-                juegos de mesa, tarjetas informativas, comida para maridaje, blanqueria para vestir la mesa. Muchos de
-                estos servicios se solicitan solo para eventos, pero cada uno de ellos se puede contratar por separado,
-                permitiendo adaptar tu compra al tipo de ocasion que se celebra. </p>
+    <div class="container-fluid row justify-content-evenly">
+        <div class="card col-md-4">
+            <img src="images/tintoyquesos.jpg" class="card-img-top" alt="Vino tinto con una tabla de quesos">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Tablas de quesos</strong></h5>
+                <p class="card-text">Cada tipo de vino empareja perfecto con un tipo especifico de queso, y distintos
+                    tipos de frutos secos o conservas. En Wine Club nos encargamos de armar el combo perfecto a medida
+                    para tus vinos preferidos por vos. También disponemos de otras opciones de acompañamientos, aunque
+                    este clásico maridaje es el mas popular.
 
-            <h4>En que consiste la comida?</h4>
-            <p>En funcion de los vinos que selecciones, nuestros especialistase se contactaran contigo para sugerirte
-                algunas opciones. Ofrecemos opciones veganas, vegetarianas, libre de gluten, libre de lacteos, entre
-                otras.</p>
+                </p>
 
-            
+            </div>
+            <!--cierra card body-->
+        </div>
+        <!--cierra card-->
 
+        <div class="card col-md-4">
+            <img src="images/tarjetainfo.jpg" class="card-img-top" alt="Foto de tarjeta informativa">
+            <div class="card-body">
+                <h5 class="card-title">Tarjetas informativas</h5>
+                <p class="card-text">Junto con los vinos que selecciones o que combinemos para vos según tus
+                    preferencias, si deseas tener mas informacion sobre los mismos, podemos incluir tarjetas
+                    informativas explicando el origen, las notas de sabor caracteristicas, su proceso de añejamiento
+                    entre otros datos interesantes.</p>
+
+            </div>
+            <!--cierra card body-->
+        </div>
+        <!--cierra card-->
+
+
+        <div class="card col-md-4">
+            <img src="images/erudito.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Juegos de mesa</h5>
+                <p class="card-text">Recientemente incorporamos a nuestros combos la posibilidad de sumar juegos de
+                    mesa. Actualmente ofrecemos clasicos como Monopoly, Twister y Pictionary; ademas de nuestros
+                    preferido, una version criolla y desestructurada de los clasicos juegos de preguntas y respuestas:
+                    el Erudito. </p>
+
+            </div>
+            <!--cierra card body-->
+        </div>
+        <!--cierra card-->
+
+    </div>
+    <!--cierra container fluid-->
+
+
+</div>
+<!--cierra productos y servicios-->
+
+<!--Final de productos-->
+
+<!--Contactanos-->
+<div id="contacto">
+    <h2>Contactanos</h2>
+    <br>
+    <div class="row container-fluid">
+        <div class="col-5">
+            <h3>Nuestra ubicación</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.2709301526456!2d151.2184580153594!3d-33.88267558065239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae1078707921%3A0xd4979d8485b42f7!2sVictoria%20Barracks%2C%208%20Oxford%20St%2C%20Paddington%20NSW%202021!5e0!3m2!1ses-419!2sau!4v1631007416525!5m2!1ses-419!2sau"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
-        <footer>
-            Diseñado por Noelia Jacobo
-        </footer>
+        <div class="col-5 offset-1">
+            <h3>Formulario de contacto</h3>
+
+            <form action="/" method="post">
+                <div class="row">
+                    <label for="inputnombre" class="col-form-label col-5">Nombre</label>
+                    <div class="col-7">
+                        <input type="text" class="form-control" id="inputnombre" name="nombre">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="inputemail" class="col-form-label col-5">Email</label>
+                    <div class="col-7">
+                        <input type="email" class="form-control" id="inputemail" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="inputtel" class="col-form-label col-5">Teléfono</label>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" id="inputtel" name="tel">
+                    </div>
+                </div>
+                <fieldset class="row">
+                    <label for="inputprod" class="col-form-label col-5">Productos de interés</label>
+                    <div class="col-7">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="varietales separados"
+                                value="varietal" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Varietales por separado
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="mix de vinos"
+                                value="mix de vinos">
+                            <label class="form-check-label" for="gridRadios2">
+                                Mix de vinos
+                            </label>
+                        </div>
+
+
+                    </div>
+                </fieldset>
+
+                <div class="row">
+                    <label for="inputcomment" class="col-form-label col-5">Comentarios</label>
+                    <div class="col-7">
+                        <textarea name="comment" class="form-control" id="commentarea" cols="42" rows="10"
+                            name="comment"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" id="contactoenviar">Enviar</button>
+            </form>
+            <p>
+                {{message}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row container-fluid" id="preguntas">
+    <h2>Preguntas frecuentes</h2>
+    <h4>Puedo pedir siendo menor de edad?</h4>
+    <p>No, la venta de alcohol a menores está terminantemente prohibida, y se pide en cualquier compra que lo
+        incluye, comprobante de identidad para corroborar la edad del titular del pedido.</p>
+
+    <h4>Hay pedido mínimo?</h4>
+    <p>No tenemos establecido un pedido mínimo pero para poder acceder al envío sin costo y beneficios como
+        muestras, y accesorios de cortesía, es necesario superar los 1500 ARS.</p>
+
+    <h4>Qué clase de productos puedo combinar?</h4>
+    <p>Nuestra gama de productos incluye: vinos, elementos para servicio (copas, decantadores, tapones, etc.),
+        juegos de mesa, tarjetas informativas, comida para maridaje, blanquería para vestir la mesa. Muchos de
+        estos servicios se solicitan sólo para eventos, pero cada uno de ellos se puede contratar por separado,
+        permitiendo adaptar tu compra al tipo de ocasion que se celebra. </p>
+
+    <h4>En qué consiste la comida?</h4>
+    <p>En función de los vinos que selecciones, nuestros especialistase se contactarán contigo para sugerirte
+        algunas opciones. Ofrecemos opciones veganas, vegetarianas, libre de gluten, libre de lácteos, entre
+        otras.</p>
+
+
+
+</div>
+
+<footer>
+    Diseñado por Noelia Jacobo
+</footer>
