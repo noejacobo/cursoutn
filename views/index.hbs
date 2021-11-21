@@ -623,7 +623,7 @@
 
 
         <div class="card col-md-4">
-            <img src="images/erudito.jpg" class="card-img-top" alt="">
+            <img src="images/erudito.jpg" class="card-img-top" alt="Foto de juego El Erudito">
             <div class="card-body">
                 <h5 class="card-title">Juegos de mesa</h5>
                 <p class="card-text">Recientemente incorporamos a nuestros combos la posibilidad de sumar juegos de
@@ -639,6 +639,32 @@
     </div>
     <!--cierra container fluid-->
 
+<br>
+<!--intento de listado de vinos-->
+<div class="row row-cols-5" >
+     <h2>Listado de vinos</h2>
+    {{#each productos}}
+    <div class="col">
+
+        <ul id="listaproductos">
+
+            <li>
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal" id="aprod">
+                    <img src="{{imagen}}" alt="{{nombre}}" height="175px;">
+                    <p>{{nombre}}</p>
+                    <p>
+                    {{varietal}}</p>
+                </a>
+
+            </li>
+
+        </ul>
+    </div>
+    {{/each}}
+
+
+</div>
+<!--fin intento de listado de vinos-->
 
 </div>
 <!--cierra productos y servicios-->
@@ -741,6 +767,8 @@
 
 
 </div>
+
+
 
 <footer>
     Diseñado por Noelia Jacobo

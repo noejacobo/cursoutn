@@ -3,15 +3,14 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var novedadesModel = require ('./../models/novedadesModel');
 var cloudinary = require('cloudinary').v2;
+var productosModel = require ('./../models/productosModel');
+
 
 /* GET home page. */
 router.get('/', async function (req, res, next) {
 
-
-
-
-  var novedades = await novedadesModel.getNovedades();
-
+  var novedades = await novedadesModel.getNovedades();  
+  var productos = await productosModel.getProductos();
 
   novedades= novedades.splice(0,5); //seleccionamos los primeros 5 elementos del array
   novedades= novedades.map(novedad => { //map es un modo 
@@ -32,13 +31,26 @@ router.get('/', async function (req, res, next) {
     }
   });
 
+  productos= productos.splice(0,25); //seleccionamos los primeros 25 elementos del array
+  productos= productos.map(productos => { //map es un modo 
+   if (productos.imagen_id){
+     const imagen = cloudinary.url(productos.imagen_id,{
+       width:160,
+        crop:'fill'
+      });
+      return{
+        ...productos,
+        imagen
+      }
+    }else{
+      return{
+        ...productos,
+        imagen:'/images/noimage.jpg'
+      }
+    }
+  });
 
-
-
-
-
-
-  res.render('index', {novedades
+  res.render('index', {novedades,productos
   });
 });
 

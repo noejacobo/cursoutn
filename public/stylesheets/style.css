@@ -250,11 +250,10 @@ h5{
 
 /*tarjetas*/
 
-.card-group{display: flex;}
+.card-body{display: flex;
+    align-items: center;}
 
 .card{
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding-left: 10px;
     box-sizing: border-box;
@@ -265,7 +264,6 @@ h5{
 }
 
 .card-img-top{  
-    height: 350px;
     width: 270px;
 }
 
@@ -372,6 +370,33 @@ footer{
 }
 
 #botonagregarnov{
+    background-color: rgba(97, 94, 94, 0.849);
+    display: flex;
+    justify-content: center;    
+    border-color: gray; 
+    margin-top: 10px;
+    margin-left: 200px;
+}
+
+
+#listaproductos{
+        list-style: none;
+}
+
+#aprod{
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bolder;}
+
+#formagregarprod{
+    font-family: 'Tajawal', sans-serif;
+
+}
+
+#botonagregarprod{
     background-color: rgba(97, 94, 94, 0.849);
     display: flex;
     justify-content: center;    

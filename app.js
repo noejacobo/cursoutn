@@ -19,6 +19,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var productosRouter = require('./routes/admin/productos');
+
 
 
 var app = express();
@@ -63,6 +65,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+app.use('/admin/productos', secured, productosRouter);
+
 
 
 pool.query('select * from usuarios').then(function(resultados){console.log(resultados)});

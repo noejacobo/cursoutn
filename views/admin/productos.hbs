@@ -9,20 +9,19 @@ Hola {{usuario}}
 <br>
 
 
-
 <div class="row">
     <div class="col-5" text>
-        <h5>Listado de Novedades</h5>
+        <h5>Listado de Productos</h5>
     </div>
 
     <div class="col-3 offset-1">
-       <form class="navbar-search pull-left" method="get" action="/admin/novedades">
-  <input type="search" class="search-query" placeholder="Buscar" name="q" {{#if q}} value={{q}} {{/if}}>
+       <form class="navbar-search pull-left" method="get" action="/admin/productos">
+  <input type="search" class="search-query" placeholder="Buscar" name="qu" {{#if qu}} value={{qu}} {{/if}}>
 </form>
     </div>
 
     <div class="col-2 offset-1 text-right">
-        <a href="/admin/novedades/agregar" class="btn btn-success">
+        <a href="/admin/productos/prodagregar" class="btn btn-success">
         <i class="fas fa-trash-alt"></i>
 
 
@@ -34,28 +33,32 @@ Hola {{usuario}}
 
 <div class="row">
     <div class="col">
-        <table class="table table-striped" id="tablaadmin">
+        <table class="table table-striped" id="">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Id</th>
-                    <th scope="col">Titulo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Varietal</th>
                     <th scope="col">Imagen</th>
+
                     <th scope="col" class="text-center">Acciones</th>
 
 
                 </tr>
 
             </thead>
+        
         <tbody>
-            {{#each novedades}}
+            {{#each productos}}
             <tr>
                 <th scope="row">{{id}}</th>
-                <td>{{titulo}}</td>
+                <td>{{nombre}}</td>
+                <td>{{varietal}}</td>
                 <td>{{{imagen}}}</td>
+
                 <td class="text-right">
-                    <a href="/admin/novedades/modificar/{{id}}" class="btn btn-secondary">
-                    <i class="far fa-edit"></i>
-                    <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary">
+                    
+                    <a href="/admin/productos/eliminar/{{id}}" class="btn btn-secondary">
                     <i class="fas fa-trash-alt"></i>
 
                 </td>
@@ -65,10 +68,11 @@ Hola {{usuario}}
 
         </table>
         {{#if is_search}}
-        {{#unless novedades.length}}
-        No se encontraron resultados para "<b>{{q}}</b>"
+        {{#unless productos.length}}
+        No se encontraron resultados para "<b>{{qu}}</b>"
         {{/unless}}
         {{/if}}
+
     </div>
 
 
